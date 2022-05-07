@@ -1,17 +1,19 @@
 // Online C compiler to run C program online
 #include <stdio.h>
-int salarycalculator(int,int,int);
-int main() {
+int salarycalculator(int,int,int,char*);
+int main() {    
     
-    int ta=1000,da=1000,basic=1000,salary;
-    salary = salarycalculator(ta,da,basic);
-    printf("salary is %d",salary);
+    char des[] = "pikku";
 
+    int ta=1000,da=1000,basic=1000,salary;
+    salary = salarycalculator(ta,da,basic,des);
+    printf("salary is %d",salary);
+return 0;
 }
-int salarycalcalator(int ta,int da,int basicsalary)
+int salarycalculator(int ta,int da,int basicsalary,char *designation)
 {
     int salary;
     salary=ta+da+basicsalary;   
-    printf("salary is %d",salary);
+    printf("salary is %d %s \n",salary, designation);
    return salary;
 }
