@@ -1,0 +1,47 @@
+// Online C compiler to run C program online
+#include <stdio.h> 
+int salarycalculator(int,int,int,int); 
+int main() {  
+
+    //char designation [20] ;
+    int grade;
+    int ta, da, basic;
+
+    printf("Enter TA Amount: ");
+    scanf("%d",&ta);
+    
+    printf("Enter DA Amount: ");
+    scanf("%d", &da);
+    
+    printf("Enter basic Amount: ");
+    scanf("%d",&basic);
+    
+    printf("Enter Designation of employee : ");
+    //scanf("%s",designation);
+    scanf(" %d",&grade);
+    
+    printf("TA, DA, Basic, Designation %d %d %d %d \n",  ta, da, basic, grade);
+    int salary;
+    salary = salarycalculator(ta,da,basic,grade);
+    
+    printf("Final Salary of employee is : %d", salary);
+    
+} 
+
+
+int salarycalculator(int ta1,int da1,int basicsalary1,int grade1)
+{ //salarycalculator function defination started   
+    int salary1;
+    
+    if(grade1 != 1) {
+        ta1 = ta1 * 2;
+        printf("LEVEL 1 grade TA is %d \n", ta1);
+    } else{
+        ta1 = ta1/2;
+        printf("OTHER LEVEL grade TA is %d \n", ta1);
+    }
+    salary1 = ta1 + da1 + basicsalary1;   
+    printf("salary is for grade %d ",salary1, "Grade %d \n", grade1);
+  
+   return salary1; 
+} 
