@@ -17,14 +17,15 @@ int main() { //Main function defination started
     //Function calling and passing 4 arguments
     // 3 int valies and one string/character array value
     salary = salarycalculator(ta,da,basic,designation);
+    //printf("ta1 is: %d \n", ta1);
 } //Main function defination ended   
 
 //Function defination, Here all the passed values gets store in local variable of function argument
-int salarycalculator(int ta,int da,int basicsalary,char *designation)
+int salarycalculator(int ta1,int da1,int basicsalary1,char *designation)
 { //salarycalculator function defination started   
     int salary;
-    salary=ta+da+basicsalary;   
-    printf("salary is %d %s \n",salary, designation);
-    
-   return salary; // Function return, whose return type is int
+    salary1 = ta + da + basicsalary;   
+    printf("salary is %d %s \n",salary1, designation);
+     printf("ta1 is: %d \n", ta1);
+   return salary1; // Function return, whose return type is int
 } //salarycalculator function defination ended 
